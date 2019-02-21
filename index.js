@@ -1,5 +1,5 @@
 const Discord = require('discord.js')
-const client = new Discord.Client()
+const client = new Discord.Client({autoRecconect:true})
 
 
 
@@ -25,8 +25,8 @@ const prefix = "/";
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}`)
-    //client.channels.get('518473049197117445').send(`Logged in as ${client.user.tag}`)
+    client.user.setActivity("development!", {url: "https://twitch.tv/discordapp", type: "STREAMING"});
 })
 
 
-client.login(process.env.token)
+client.login("token")
