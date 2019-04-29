@@ -1,6 +1,7 @@
 const Discord = require('discord.js')
 const client = new Discord.Client({autoReconnect:true})
 
+var token = process.env.token
 
 
 
@@ -50,4 +51,4 @@ client.on('ready', () => {
 })
 
 
-client.login("token")
+client.login(token)
