@@ -6,7 +6,7 @@ const client = new Discord.Client();
 client.on('message', message => {
 const prefix = "/";
     
-    if (message.channel.id == ['572551812931125248', '572072693915058208']) {
+    if (message.channel.id == ['572551812931125248', '572072693915058208']) return {
      const sayMessage = args.join(" ");
 
       let servIcon = message.guild.iconURL;
