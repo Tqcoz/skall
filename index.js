@@ -22,7 +22,7 @@ const prefix = "/";
       message.delete().catch(O_o=>{});
 
       message.channel.send(esayEmbed);
-    }   
+    }
     
     
     if (message.author.bot) return;
@@ -41,12 +41,12 @@ const prefix = "/";
 
 
 
-})
+});
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}`)
     client.user.setActivity("development!", {url: "https://twitch.tv/discordapp", type: "STREAMING"});
-})
+});
 
 
 client.login(process.env.token)
