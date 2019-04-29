@@ -25,7 +25,7 @@ const prefix = "/";
 
       message.channel.send(esayEmbed);
   }   
-    }
+    
     
     if (message.author.bot) return;
     const args = message.content.slice(prefix.length).trim().split(/ +/g)
