@@ -24,7 +24,7 @@ const prefix = "/";
       message.delete().catch(O_o=>{});
 
       message.channel.send(esayEmbed);
-  }   
+    }   
     
     
     if (message.author.bot) return;
